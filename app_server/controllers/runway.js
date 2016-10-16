@@ -3,5 +3,5 @@
  */
 /* GET home page */
 module.exports.runway = function(req,res){
-    res.render('home', { title: 'runway edits page'});
+    res.render('runway', { title: 'runway edits page'});
 };
