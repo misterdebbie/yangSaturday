@@ -3,8 +3,8 @@
  */
 /* GET home page */
 module.exports.storedit = function(req,res){
-    res.render('home', { title: 'store edits page'});
+    res.render('store', { title: 'store edits page'});
 };
 module.exports.bonusedit = function(req,res){
-    res.render('home', { title: 'bonus edits page'});
+    res.render('bonus', { title: 'bonus edits page'});
 };
