@@ -7,13 +7,13 @@ module.exports.home = function(req,res){
 };
 /* GET home page */
 module.exports.art = function(req,res){
-    res.render('home', { title: 'art page!'});
+    res.render('art', { title: 'art page!'});
 };
 /* GET home page */
 module.exports.health = function(req,res){
-    res.render('home', { title: 'health page!'});
+    res.render('health', { title: 'health page!'});
 };
 /* GET home page */
 module.exports.readmes = function(req,res){
-    res.render('home', { title: 'read this stuff page!'});
+    res.render('readme', { title: 'read this stuff page!'});
 };
