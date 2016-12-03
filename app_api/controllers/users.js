@@ -11,7 +11,7 @@ var sendJSONresponse = function(res, status, content) {
 
 /* GET list of users */
 module.exports.displayUsers = function(req, res) {
-    User
+     User
         .find()
         .exec(
             function(err, results) {

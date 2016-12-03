@@ -3,6 +3,7 @@
  */
 var mongoose = require('mongoose');
 
+
 var wishSchema = new mongoose.Schema({
     item: {type: String, required: true},
     price: {
@@ -15,6 +16,15 @@ var wishSchema = new mongoose.Schema({
     }
 });
 
+var commentSchema = new mongoose.Schema({
+    comment: {type: String},
+    createdOn: {
+        type: Date,
+        "default": Date.now
+    }
+
+});
+
 var userSchema = new mongoose.Schema({
     name: {
         type: String,
@@ -24,9 +34,7 @@ var userSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    comments: [{
-        type: String
-    }],
+    comments: [commentSchema],
     wishlist: [wishSchema]
 });
 

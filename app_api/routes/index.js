@@ -6,6 +6,7 @@ var router = express.Router();
 var ctrlUsers = require('../controllers/users');
 //var ctrlWish = require('../controllers/wish');
 
+
 router.get('/users', ctrlUsers.displayUsers);
 router.post('/users', ctrlUsers.userCreate);
 router.get('/users/:userId', ctrlUsers.userReadOne);
