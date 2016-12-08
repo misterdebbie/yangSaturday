@@ -1,0 +1,59 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        title= title
+        link(rel='stylesheet', href='/bootstrap/css/bootstrap.min.css')
+        link(rel='stylesheet', href='/bootstrap/css/bootstrap-theme.min.css')
+        link(rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css")
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        link(href="https://fonts.googleapis.com/css?family=Creepster" rel="stylesheet")
+
+    body
+        .navbar.navbar-default.navbar-fixed-top
+            .container
+                .row
+                  .col-xs-4#icons
+                      i.fa.fa-tumblr-square
+                      a(href="http://oiseaugrand.tumblr.com")
+                      i.fa.fa-tumblr-square
+                      a(href="http://oiseaugrand.tumblr.com" title="mrdebbie" style="font-size:30px;color:green")
+                      i.fa.fa-snapchat-square
+                      a(href="https://www.instagram.com/mrdebbiechong/" title="mrdebbie" style="font-size:30px;color:green")
+                      i.fa.fa-pinterest-square
+                      a(href="https://www.pinterest.com/mrdebbiechong/" title="mrdebbie" style="font-size:30px;color:green")
+                      i.fa.fa-instagram
+                      a(href="https://www.instagram.com/mrdebbiechong/" title="mrdebbie" style="font-size:30px;color:green")
+
+            .container
+                .navbar-header
+                    a.navbar-brand(href='/') Yang Project
+                    button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar-main')
+                        span.icon-bar
+                        span.icon-bar
+                        span.icon-bar
+                #navbar-main.navbar-collapse.collapse
+                    ul.nav.navbar-nav
+                        li
+                            a(href='/login') login
+                        li
+                            a(href='/runway') runway
+                        li
+                            a(href='/amazon') amazon edit
+                        li
+                            a(href='/nordstrom') nordstrom edit
+                        li
+                            a(href='/all') all together
+                        li
+                            a(href='/shop') shop
+    .container
+        block content
+
+        footer
+            .row
+                .col-xs-12
+                    small dc1980
+    script(src='/javascripts/jquery-1.11.2.min.js')
+    script(src='/bootstrap/js/bootstrap.min.js')
+    script(src='/javascripts/title.js')

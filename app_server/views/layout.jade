@@ -37,12 +37,14 @@ html(lang='en')
             li
               a(href='/createProfile') create profile
   .container
-    block content
+    div(ng-view)
+      block content
 
     footer
       .row
         .col-xs-12
           small dc1980
-  script(src='/angular/yangApp.js')
+  script(src='/lib/angular-route.min.js')
+  script(src='/app.js')
   script(src='/javascripts/jquery-1.11.2.min.js')
   script(src='/bootstrap/js/bootstrap.min.js')

@@ -29,7 +29,7 @@ var _showError = function (req, res, status) {
 };
 
 
-/* GET home page */
-module.exports.createUser = function(req,res){
+/* GET login page */
+module.exports.createuser = function(req,res){
     res.render('profile', { title: 'new user page'});
 };

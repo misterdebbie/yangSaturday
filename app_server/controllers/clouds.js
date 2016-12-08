@@ -1,19 +1,12 @@
 /**
  * Created by debrachong on 10/15/16.
  */
-/* GET home page */
-module.exports.home = function(req,res){
-    res.render('home', { title: 'the home page!'});
+
+/* GET all together page */
+module.exports.all = function(req,res){
+    res.render('all', { title: 'all together page!'});
 };
-/* GET home page */
-module.exports.art = function(req,res){
-    res.render('art', { title: 'art page!'});
-};
-/* GET home page */
-module.exports.health = function(req,res){
-    res.render('health', { title: 'health page!'});
-};
-/* GET home page */
-module.exports.readmes = function(req,res){
-    res.render('readme', { title: 'read this stuff page!'});
+/* GET shop page */
+module.exports.shop = function(req,res){
+    res.render('shop', { title: 'shop page!'});
 };
