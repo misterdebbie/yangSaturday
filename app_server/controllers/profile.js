@@ -28,8 +28,10 @@ var _showError = function (req, res, status) {
     });
 };
 
-
+var renderProfilepage = function(req,res){
+    res.render('profile', { title: 'new user page'});
+};
 /* GET login page */
 module.exports.createuser = function(req,res){
-    res.render('profile', { title: 'new user page'});
+    renderProfilepage(req,res);
 };
