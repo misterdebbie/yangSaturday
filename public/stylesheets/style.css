@@ -1,10 +1,18 @@
 body {
-  padding: 50px;
     font-family: 'Creepster', cursive;
     color:green;
-  background-color: peachpuff;
+    background-image: url("/images/yfluff.png");
 }
 
+/*.header{
+  color: green;
+}
 a {
   color: #00B7FF;
 }
+#icons{
+  display:block;
+  padding: 40px;
+  float:right;
+  padding-left: 190px;
+}*/
