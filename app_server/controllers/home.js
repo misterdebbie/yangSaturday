@@ -3,5 +3,5 @@
  */
 /* GET home page */
 module.exports.home = function(req,res){
-    res.render('home', { title: 'the home page!'});
+    res.render('yang', { title: 'yang!'});
 };
