@@ -1,11 +1,11 @@
 var express = require('express');
 var router = express.Router();
 var ctrlHome = require('../controllers/home.js');
-var ctrlCloud = require('../controllers/clouds.js');
+/*var ctrlProfile = require('../controllers/profile.js');
 var ctrlRunway = require('../controllers/runway.js');
 var ctrlEdits = require('../controllers/stores.js');
-var ctrlProfile = require('../controllers/profile.js');
-//var ctrlAng = require('../controllers/others.js');
+var ctrlCloud = require('../controllers/clouds.js');
+//var ctrlAng = require('../controllers/others.js');*/
 
 /* GET home page. */
 /*router.get('/', ctrlAng.angularApp);
@@ -18,13 +18,13 @@ router.get('/store', ctrlEdits.storedit);
 router.get('/bonus', ctrlEdits.bonusedit);
 router.get('/createProfile', ctrlProfile.createUser);*/
 
-router.get('/', ctrlHome.home);
+router.get('/yang', ctrlHome.home);
+/*router.get('/login', ctrlProfile.createuser);
 router.get('/runway', ctrlRunway.runway);
 router.get('/amazon', ctrlEdits.amazonedit);
 router.get('/nordstrom', ctrlEdits.nordstromedit);
 router.get('/all', ctrlCloud.all);
-router.get('/login', ctrlProfile.createuser);
-router.get('/shop', ctrlCloud.shop);
+router.get('/shop', ctrlCloud.shop);*/
 
 
 module.exports = router;
